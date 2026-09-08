@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Dòng trên khai báo đây là tài liệu HTML5 (bắt buộc phải có, luôn ở dòng đầu tiên) -->
+
+<html lang="vi">
+<!-- Thẻ <html> là thẻ gốc (root), bao toàn bộ nội dung trang.
+     lang="vi" báo cho trình duyệt biết trang viết bằng tiếng Việt (hỗ trợ đọc màn hình, SEO...) -->
+
+<head>
+  <!-- Thẻ <head> chứa các THÔNG TIN VỀ trang (metadata), KHÔNG hiển thị trực tiếp lên màn hình -->
+
+  <meta charset="UTF-8">
+  <!-- Khai báo bảng mã UTF-8 để trình duyệt hiển thị đúng tiếng Việt có dấu -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Giúp trang hiển thị đúng tỉ lệ trên điện thoại / máy tính bảng (responsive) -->
+
+  <title>Ha Gia Bao - Gioi thieu</title>
+  <!-- Nội dung hiển thị trên TAB của trình duyệt, không hiển thị trong trang -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Liên kết file CSS bên ngoài để trang trí giao diện.
+       href="css/style.css" là đường dẫn TƯƠNG ĐỐI: đi từ vị trí file index.html
+       vào thư mục css/, lấy file style.css -->
+</head>
+
+<body>
+  <!-- Thẻ <body> chứa toàn bộ NỘI DUNG hiển thị trên trang web -->
+
+  <h1><strong>Hà Gia Bảo</strong></h1>
+  <!-- <h1> là tiêu đề lớn nhất (Heading 1). Mỗi trang chỉ nên có 1 thẻ <h1>.
+       <strong> làm chữ in đậm VÀ mang ý nghĩa "quan trọng" (khác <b> chỉ in đậm hình thức) -->
+
+  <h2>Thông tin cá nhân</h2>
+  <!-- <h2> là tiêu đề cấp 2, nhỏ hơn <h1>, dùng để chia các mục trong trang -->
+
+  <p>Quê quán: Việt Nam</p>
+  <p>Ngành học: Công nghệ thông tin</p>
+  <p>Năm học: Năm 2</p>
+  <!-- <p> (paragraph) dùng để chứa đoạn văn bản thông thường -->
+
+  <h2>Sở thích</h2>
+  <ul>
+    <!-- <ul> = Unordered List: danh sách KHÔNG có thứ tự, mỗi mục hiện dấu chấm tròn (•) -->
+    <li>Lập trình web</li>
+    <li>Nghe nhạc</li>
+    <li>Chơi thể thao</li>
+    <!-- Mỗi <li> (list item) là một mục trong danh sách -->
+  </ul>
+
+  <h2>Mục tiêu học kỳ này</h2>
+  <ol>
+    <!-- <ol> = Ordered List: danh sách CÓ thứ tự, tự động đánh số 1, 2, 3... -->
+    <li>Nắm vững HTML, CSS cơ bản</li>
+    <li>Thành thạo sử dụng Git và GitHub</li>
+    <li>Hoàn thành tốt các bài thực hành trên lớp</li>
+  </ol>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* =====================================================================
+   FILE: style.css
+   MỤC ĐÍCH: Định dạng giao diện (màu sắc, font chữ, khoảng cách) cho
+   trang index.html. File này được liên kết vào index.html bằng dòng:
+   <link rel="stylesheet" href="css/style.css"> trong thẻ <head>.
+
+   CÚ PHÁP CSS CƠ BẢN:
+   selector {
+     thuoc-tinh: gia-tri;
+   }
+   "selector" là tên thẻ HTML (hoặc class/id) muốn áp dụng style.
+   ===================================================================== */
+
+/* ---- Style cho toàn bộ trang (thẻ <body>) ---- */
+body {
+  font-family: Arial, sans-serif;  /* Font chữ chính của trang */
+  background-color: #f0f8ff;       /* Màu nền: xanh rất nhạt (AliceBlue) */
+  padding: 20px;                   /* Khoảng cách từ nội dung đến mép trình duyệt */
+}
+
+/* ---- Style cho tiêu đề chính <h1> (họ tên) ---- */
+h1 {
+  color: #028090;        /* Màu chữ: xanh ngọc (khác màu đen mặc định) */
+  text-align: center;    /* Căn giữa tiêu đề */
+}
+
+/* ---- Style cho các tiêu đề phụ <h2> (Thông tin cá nhân, Sở thích...) ---- */
+h2 {
+  color: #d1495b;                 /* Màu chữ: đỏ hồng, KHÁC màu h1 để dễ phân biệt */
+  border-bottom: 2px solid #d1495b; /* Vẽ 1 đường kẻ ngang dày 2px, màu đỏ hồng, ngay dưới chữ */
+  padding-bottom: 5px;             /* Khoảng cách giữa chữ và đường kẻ, cho đỡ dính sát */
+}
+
+/* ---- Style cho đoạn văn bản <p> ---- */
+p {
+  color: #333333;      /* Màu chữ xám đậm, dễ đọc hơn màu đen thuần */
+  line-height: 1.6;    /* Khoảng cách giữa các dòng = 1.6 lần cỡ chữ, giúp thoáng mắt */
+  max-width: 700px;     /* Giới hạn chiều rộng đoạn văn, tránh chữ bị kéo dài hết màn hình */
+}
+
+/* ---- Style cho liên kết <a> (nếu có) ---- */
+a {
+  color: #028090;           /* Màu liên kết mặc định (trùng màu h1 cho đồng bộ) */
+  text-decoration: none;    /* Bỏ gạch chân mặc định của link */
+}
+
+/* ---- Hiệu ứng khi RÊ CHUỘT vào liên kết (giả lớp :hover) ---- */
+a:hover {
+  color: #d1495b;   /* Khi hover, chữ đổi sang màu đỏ hồng để người dùng biết đây là link có thể bấm */
+}
